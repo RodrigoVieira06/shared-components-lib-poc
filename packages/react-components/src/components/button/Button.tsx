@@ -1,7 +1,13 @@
-export const Button = () => {
+import * as React from 'react';
+
+export interface ButtonProps {
+  name: string
+}
+
+export const Button = ({ name }: ButtonProps) => {
   return (
     <div>
-      <h1>Welcome to my app</h1>
+      <button>{name}</button>
     </div>
   );
 }
