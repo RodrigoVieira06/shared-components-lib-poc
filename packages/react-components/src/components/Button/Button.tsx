@@ -2,7 +2,7 @@ import { Button } from 'antd';
 import React, { ReactNode } from 'react';
 
 export interface ButtonProps {
-  text: string;
+  children: ReactNode;
   type?: "default" | "primary" | "dashed" | "link" | "text";
   icon?: ReactNode;
   iconPosition?: "start" | "end";
@@ -18,10 +18,11 @@ export interface ButtonProps {
   styles?: {
     icon?: React.CSSProperties;
   };
+  href?: string;
 }
 
 export const MainButton: React.FC<ButtonProps> = ({
-  text,
+  children,
   type = "default",
   icon,
   iconPosition = "start",
@@ -32,6 +33,7 @@ export const MainButton: React.FC<ButtonProps> = ({
   className,
   classNames = {},
   styles = {},
+  href,
   ...restProps
 }) => {
   return (
@@ -42,6 +44,7 @@ export const MainButton: React.FC<ButtonProps> = ({
       danger={danger}
       block={block}
       className={className}
+      href={href}
       {...restProps}
     >
       {icon && iconPosition === "start" && (
@@ -49,7 +52,7 @@ export const MainButton: React.FC<ButtonProps> = ({
           {icon}
         </span>
       )}
-      {text}
+      {children}
       {icon && iconPosition === "end" && (
         <span className={classNames.icon} style={styles.icon}>
           {icon}

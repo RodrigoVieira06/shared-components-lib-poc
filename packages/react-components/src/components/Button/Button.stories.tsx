@@ -10,7 +10,7 @@ const meta: Meta<typeof MainButton> = {
     layout: 'centered',
   },
   argTypes: {
-    text: {
+    children: {
       control: 'text',
       description: 'Texto exibido no botão.',
       defaultValue: 'Test Value',
@@ -59,7 +59,7 @@ type Story = StoryObj<typeof MainButton>;
 
 export const Playground: Story = {
   args: {
-    text: 'Test Value',
+    children: 'Test Value',
     type: 'primary',
     disabled: false,
     loading: false,
@@ -74,7 +74,7 @@ export const PrimaryButton: Story = {
   args: {
     ...Playground.args,
     type: 'primary',
-    text: 'Primary Button',
+    children: 'Primary Button',
   },
 };
 
@@ -82,7 +82,7 @@ export const DangerButton: Story = {
   args: {
     ...Playground.args,
     type: 'primary',
-    text: 'Danger Button',
+    children: 'Danger Button',
     danger: true,
   },
 };
@@ -90,7 +90,7 @@ export const DangerButton: Story = {
 export const WithIconAtEnd: Story = {
   args: {
     ...Playground.args,
-    text: 'Icon at End',
+    children: 'Icon at End',
     icon: <PlusOutlined />,
     iconPosition: 'end',
   },
