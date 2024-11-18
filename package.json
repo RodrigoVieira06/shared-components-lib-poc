@@ -5,9 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "yarn build",
-    "deploy": "yarn prepublishOnly && lerna version && lerna publish --force-publish",
+    "deploy": "lerna version --no-private && lerna publish --no-private",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
