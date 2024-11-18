@@ -1,6 +1,6 @@
 {
   "name": "shared-components-lib-poc",
-  "private": false,
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -9,10 +9,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
     "@storybook/addon-essentials": "^8.4.4",
@@ -28,9 +25,6 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "lerna": "^8.1.9",
-    "storybook": "^8.4.4",
-    "typescript": "^5.6.3"
-  },
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts"
+    "storybook": "^8.4.4"
+  }
 }
