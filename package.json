@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "lerna version && lerna publish --force-publish",
+    "build": "tsc",
+    "prepublishOnly": "yarn build",
+    "deploy": "yarn prepublishOnly && lerna version && lerna publish --force-publish",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -32,9 +34,6 @@
     "storybook": "^8.4.4",
     "typescript": "^5.6.3"
   },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
-  }
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts"
 }

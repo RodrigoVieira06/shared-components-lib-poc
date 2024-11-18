@@ -11919,7 +11919,7 @@ react-app-polyfill@^3.0.0:
     whatwg-fetch "^3.6.2"
 
 "react-components-poc@file:/home/rodrigovl/@work/ws-levva/shared-components-lib-poc/packages/react-components":
-  version "0.0.4"
+  version "0.0.6"
   resolved "file:packages/react-components"
   dependencies:
     antd "^5.21.6"
