@@ -2,7 +2,7 @@
   "name": "react-components-poc",
   "version": "0.0.4",
   "main": "dist/index.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "antd": "^5.21.6",
     "react": "^18.3.1",
