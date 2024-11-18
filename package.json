@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "lerna version --no-private && lerna publish --from-package",
+    "deploy": "lerna version --no-private && lerna publish from-package",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
