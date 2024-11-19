@@ -1,62 +1,24 @@
-import { Button } from 'antd';
-import React, { ReactNode } from 'react';
+import React from 'react';
+import { Button, ButtonProps as AntButtonProps } from 'antd';
 
-export interface ButtonProps {
-  children: ReactNode;
-  type?: "default" | "primary" | "dashed" | "link" | "text";
-  icon?: ReactNode;
-  iconPosition?: "start" | "end";
-  disabled?: boolean;
-  loading?: boolean | { delay?: number };
-  prefixCls?: string;
-  className?: string;
-  danger?: boolean;
-  block?: boolean;
-  classNames?: {
-    icon?: string;
-  };
-  styles?: {
-    icon?: React.CSSProperties;
-  };
-  href?: string;
+export interface MainButtonProps extends AntButtonProps {
+  iconPosition?: 'start' | 'end';
 }
 
-export const MainButton: React.FC<ButtonProps> = ({
+export const MainButton: React.FC<MainButtonProps> = ({
   children,
-  type = "default",
   icon,
-  iconPosition = "start",
-  disabled = false,
-  loading = false,
-  danger = false,
-  block = false,
-  className,
-  classNames = {},
-  styles = {},
-  href,
+  iconPosition = 'start',
   ...restProps
 }) => {
   return (
-    <Button
-      type={type}
-      disabled={disabled}
-      loading={loading}
-      danger={danger}
-      block={block}
-      className={className}
-      href={href}
-      {...restProps}
-    >
-      {icon && iconPosition === "start" && (
-        <span className={classNames.icon} style={styles.icon}>
-          {icon}
-        </span>
+    <Button {...restProps}>
+      {icon && iconPosition === 'start' && (
+        <span style={{ marginRight: 8 }}>{icon}</span>
       )}
       {children}
-      {icon && iconPosition === "end" && (
-        <span className={classNames.icon} style={styles.icon}>
-          {icon}
-        </span>
+      {icon && iconPosition === 'end' && (
+        <span style={{ marginLeft: 8 }}>{icon}</span>
       )}
     </Button>
   );
