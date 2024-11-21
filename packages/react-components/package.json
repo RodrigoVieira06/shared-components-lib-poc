@@ -1,5 +1,5 @@
 {
-  "name": "@testing-components/react-components-poc",
+  "name": "react-components-poc",
   "version": "0.1.4",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
@@ -62,5 +62,5 @@
   "files": [
     "dist"
   ],
-  "gitHead": "0199a604d3b4edd62b86c6335177e10efd14d749"
+  "gitHead": "b033c4e42dabda04b8b137ffc10be76b5e4cf9b5"
 }
