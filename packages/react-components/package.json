@@ -6,7 +6,7 @@
   "license": "ISC",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "private": true,
+  "private": false,
   "dependencies": {
     "antd": "^5.22.1"
   },
