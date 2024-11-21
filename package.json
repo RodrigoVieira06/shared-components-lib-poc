@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "lerna run build && lerna version && lerna publish from-package",
+    "deploy": "lerna run prepublishOnly && lerna version && lerna publish from-package",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -27,6 +27,6 @@
     "@types/react-dom": "^18.3.1",
     "lerna": "^8.1.9",
     "storybook": "^8.4.4",
-    "style-dictionary":"^4.2.0"
+    "style-dictionary": "^4.2.0"
   }
 }

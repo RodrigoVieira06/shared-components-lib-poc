@@ -5,12 +5,15 @@
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
   "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "tsup"
+    "build": "rollup -c",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
   },
   "dependencies": {
     "antd": "^5.22.1"
@@ -20,10 +23,25 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "rollup": "^4.27.3",
+    "rollup-plugin-typescript2": "^0.36.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./MainButton": {
+      "import": "./dist/MainButton/index.esm.js",
+      "require": "./dist/MainButton/index.js"
+    },
+    "./MainInput": {
+      "import": "./dist/MainInput/index.esm.js",
+      "require": "./dist/MainInput/index.js"
+    }
   },
   "files": [
     "dist"
-  ],
-  "gitHead": "f1139d330a4823f5cfea5de0e12d67142170eab4"
+  ]
 }

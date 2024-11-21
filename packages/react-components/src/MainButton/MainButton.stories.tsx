@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { MainButton } from './MainButton';
+import { default as MainButton } from './MainButton';
 import { PlusOutlined } from '@ant-design/icons';
 
 const meta: Meta<typeof MainButton> = {
