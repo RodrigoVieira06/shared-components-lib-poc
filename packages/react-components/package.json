@@ -14,7 +14,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rm -rf dist/ && tsup src/index.ts --dts"
+    "build": "rm -rf dist/ && tsc --build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,25 +42,12 @@
     "typescript": "^5.6.3"
   },
   "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
-    },
-    "./Box": {
-      "import": "./dist/components/Box/index.esm.js",
-      "require": "./dist/components/Box/index.js"
-    },
-    "./ButtonBase": {
-      "import": "./dist/components/ButtonBase/index.esm.js",
-      "require": "./dist/components/ButtonBase/index.js"
-    },
-    "./Typography": {
-      "import": "./dist/components/Typography/index.esm.js",
-      "require": "./dist/components/Typography/index.js"
+    "./MainButton": {
+      "import": "./dist/components/MainButton/index.esm.js",
+      "require": "./dist/components/MainButton/index.js"
     }
   },
   "files": [
     "dist"
-  ],
-  "gitHead": "5a716aea45035a9dd6046a98eda17f6b5536675e"
+  ]
 }
