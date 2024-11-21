@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.0.15",
+  "version": "testing-components0.0.0",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",

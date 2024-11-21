@@ -4,7 +4,7 @@
   ],
   "npmClient": "yarn",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.15",
+  "version": "testing-components0.0.0",
   "command": {
     "run": {
       "npmClientArgs": [
