@@ -1,5 +1,5 @@
 {
-  "name": "react-components-poc",
+  "name": "@shared-components-lib-poc/react-components-poc",
   "version": "0.1.9",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
@@ -7,32 +7,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
-  "dependencies": {
-    "antd": "^5.22.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "tsup"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "antd": "^5.22.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
@@ -40,12 +19,6 @@
     "react-dom": "^18.3.1",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
-  },
-  "exports": {
-    "./MainButton": {
-      "import": "./dist/components/MainButton/index.esm.js",
-      "require": "./dist/components/MainButton/index.js"
-    }
   },
   "files": [
     "dist"

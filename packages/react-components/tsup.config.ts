@@ -2,12 +2,11 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: [
-    "src/components/**/!(*.stories).{ts,tsx}"
+    "src/**/!(*.stories).{ts,tsx}"
   ],
   dts: true,
-  outDir: "dist",
-  splitting: false,
+  sourcemap: true,
   clean: true,
-  minify: true,
-  target: "ES6",
+  splitting: true,
+  external: ["react"]
 });
