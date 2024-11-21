@@ -2,9 +2,9 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": null,
+  "version": "0.0.0",
   "command": {
     "run": {
       "npmClientArgs": [
