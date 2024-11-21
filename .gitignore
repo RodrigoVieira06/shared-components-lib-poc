@@ -4,3 +4,4 @@ lerna-debug.log
 *storybook.log
 dist/
 yarn.lock
+.npmrc
