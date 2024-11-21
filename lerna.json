@@ -2,13 +2,12 @@
   "packages": [
     "packages/*"
   ],
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "0.0.14",
   "command": {
-    "publish": {
-      "allowBranch": "master",
-      "message": "chore(release): publish"
+    "run": {
+      "npmClientArgs": ["--no-package-lock"]
     }
   }
 }

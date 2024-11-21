@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, ButtonProps as AntButtonProps } from 'antd';
 
-export interface MainButtonProps extends AntButtonProps {
+export interface ButtonProps extends AntButtonProps {
   iconPosition?: 'start' | 'end';
 }
 
-export const MainButton: React.FC<MainButtonProps> = ({
+export const MainButton: React.FC<ButtonProps> = ({
   children,
   icon,
   iconPosition = 'start',

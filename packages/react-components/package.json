@@ -1,6 +1,6 @@
 {
-  "name": "react-components-poc",
-  "version": "0.0.14",
+  "name": "@levva-components/react-components-poc",
+  "version": "0.0.1",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
@@ -37,5 +37,26 @@
     "react-dom": "^18.3.1",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
-  }
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js"
+    },
+    "./Box": {
+      "import": "./dist/components/Box/index.esm.js",
+      "require": "./dist/components/Box/index.js"
+    },
+    "./ButtonBase": {
+      "import": "./dist/components/ButtonBase/index.esm.js",
+      "require": "./dist/components/ButtonBase/index.js"
+    },
+    "./Typography": {
+      "import": "./dist/components/Typography/index.esm.js",
+      "require": "./dist/components/Typography/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ]
 }
