@@ -6,7 +6,7 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "@testing-components/*": [
+      "@shared-components-lib-poc/*": [
         "packages/*/src"
       ]
     }

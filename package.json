@@ -1,6 +1,6 @@
 {
   "name": "shared-components-lib-poc",
-  "private": false,
+  "private": true,
   "license": "ISC",
   "workspaces": [
     "packages/*"
