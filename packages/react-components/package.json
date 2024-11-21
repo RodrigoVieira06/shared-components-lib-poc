@@ -10,6 +10,9 @@
   "dependencies": {
     "antd": "^5.22.1"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rm -rf dist/ && tsup src/index.ts --dts"
   },
@@ -59,5 +62,5 @@
   "files": [
     "dist"
   ],
-  "gitHead": "b207ccb7de46359c6e9d070a6f58929a52c21303"
+  "gitHead": "50339f64594c8d8e019f67c1d64f8ddf9edf412d"
 }
