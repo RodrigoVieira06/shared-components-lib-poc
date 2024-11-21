@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
@@ -22,10 +22,10 @@
     "@types/react": "^18.3.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tsup": "^8.3.5",
-    "typescript": "^5.6.3",
     "rollup": "^4.27.3",
-    "rollup-plugin-typescript2": "^0.36.0"
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
   },
   "exports": {
     ".": {
