@@ -11,7 +11,7 @@ module.exports = {
   output: [
     {
       dir: 'dist',
-      format: 'esm',
+      format: 'es',
       sourcemap: true,
       preserveModules: true,
       preserveModulesRoot: 'src',
@@ -22,6 +22,6 @@ module.exports = {
       tsconfig: path.resolve(__dirname, 'tsconfig.json'),
       useTsconfigDeclarationDir: true,
       clean: true
-    })
+    }),
   ],
 };

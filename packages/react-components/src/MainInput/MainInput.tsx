@@ -4,8 +4,10 @@ export interface InputProps {
   id?: string;
 }
 
-export const MainInput: React.FC<InputProps> = ({ id }) => {
+const MainInput: React.FC<InputProps> = ({ id }) => {
   return (
     <input id={id} />
   );
 };
+
+export default MainInput;

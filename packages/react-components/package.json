@@ -15,20 +15,6 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.js"
-    },
-    "./MainButton": {
-      "import": "./dist/MainButton/index.esm.js",
-      "require": "./dist/MainButton/index.js"
-    },
-    "./MainInput": {
-      "import": "./dist/MainInput/index.esm.js",
-      "require": "./dist/MainInput/index.js"
-    }
-  },
   "files": [
     "dist"
   ],
@@ -41,7 +27,6 @@
     "react-dom": "^18.3.1",
     "rollup": "^4.27.3",
     "rollup-plugin-typescript2": "^0.36.0",
-    "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   }
 }

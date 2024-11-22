@@ -1,1 +1,1 @@
-export { MainInput } from "./MainInput";
+export { default } from "./MainInput";
