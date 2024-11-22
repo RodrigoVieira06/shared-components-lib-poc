@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
@@ -24,7 +24,7 @@
     "@types/react": "^18.3.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "typescript": "^5.6.3",
-    "tsup": "^8.3.5"
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
   }
 }
