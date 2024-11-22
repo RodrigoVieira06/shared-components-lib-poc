@@ -10,7 +10,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
     "@storybook/addon-essentials": "^8.4.4",

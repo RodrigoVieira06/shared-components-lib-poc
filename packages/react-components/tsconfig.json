@@ -9,14 +9,11 @@
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "./dist",
     "outDir": "./dist",
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/*.ts",
+    "src/**/*"
   ],
   "exclude": [
     "src/**/*.spec.ts",
