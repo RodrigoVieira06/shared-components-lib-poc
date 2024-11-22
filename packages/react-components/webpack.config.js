@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
+    MainButton: './src/MainButton/index.ts',
+    MainInput: './src/MainInput/index.ts',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
