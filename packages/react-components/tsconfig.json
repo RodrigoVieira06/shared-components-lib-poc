@@ -9,8 +9,8 @@
     "skipLibCheck": true,
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "./lib",
-    "outDir": "./lib",
+    "declarationDir": "./dist",
+    "outDir": "./dist",
     "allowSyntheticDefaultImports": true
   },
   "exclude": [

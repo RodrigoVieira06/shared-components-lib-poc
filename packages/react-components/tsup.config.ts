@@ -5,7 +5,7 @@ export default defineConfig({
     MainButton: 'src/MainButton/index.ts',
     MainInput: 'src/MainInput/index.ts',
   },
-  outDir: 'lib',
+  outDir: 'dist',
   format: ['esm'],
   clean: true,
   dts: true,
