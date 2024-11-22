@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "module": "ESNext",               // Use ESNext para compatibilidade com tree shaking
-    "target": "ESNext",               // Gera código moderno
-    "moduleResolution": "node",       // Resolva módulos como no Node.js
-    "strict": true,                   // Ativa as verificações estritas
-    "esModuleInterop": true,          // Compatibilidade com CommonJS
-    "skipLibCheck": true,             // Ignora verificações de bibliotecas
-    "declaration": true,              // Gera os arquivos .d.ts
-    "declarationMap": true,           // Gera mapas de declaração
-    "outDir": "./dist",               // Diretório de saída
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
     "allowSyntheticDefaultImports": true
   },
   "exclude": [
