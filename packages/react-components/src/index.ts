@@ -1,2 +1,2 @@
-export { MainButton } from './MainButton';
-export { MainInput } from './MainInput';
+export * from './MainButton';
+export * from './MainInput';

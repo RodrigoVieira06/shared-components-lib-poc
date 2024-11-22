@@ -2,22 +2,26 @@ const path = require('path');
 const typescript = require('rollup-plugin-typescript2');
 
 module.exports = {
-  external: ['react', 'react-dom', 'antd'], // Definir dependências externas corretamente
-  input: 'src/index.ts', // Use apenas o arquivo principal como entrada
+  external: ['react', 'react-dom', 'antd'],
+  input: [
+    'src/MainButton/index.ts',
+    'src/MainInput/index.ts',
+    'src/index.ts'
+  ],
   output: [
     {
       dir: 'dist',
-      format: 'esm', // Formato ES Modules
+      format: 'esm',
       sourcemap: true,
-      preserveModules: true, // Preserva a estrutura de módulos
-      preserveModulesRoot: 'src', // Garante que a estrutura do src seja usada no dist
+      preserveModules: true,
+      preserveModulesRoot: 'src',
     },
   ],
   plugins: [
     typescript({
       tsconfig: path.resolve(__dirname, 'tsconfig.json'),
       useTsconfigDeclarationDir: true,
-      clean: true,
-    }),
+      clean: true
+    })
   ],
 };
