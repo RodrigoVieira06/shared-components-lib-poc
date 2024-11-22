@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "lerna run prepublishOnly && lerna version && lerna publish from-package",
+    "deploy": "lerna run build && lerna version && lerna publish from-package",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
