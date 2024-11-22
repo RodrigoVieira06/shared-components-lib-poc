@@ -5,7 +5,7 @@ export interface ButtonProps extends AntButtonProps {
   iconPosition?: 'start' | 'end';
 }
 
-const MainButton: React.FC<ButtonProps> = ({
+export const MainButton: React.FC<ButtonProps> = ({
   children,
   icon,
   iconPosition = 'start',
@@ -23,5 +23,3 @@ const MainButton: React.FC<ButtonProps> = ({
     </Button>
   );
 };
-
-export default MainButton;

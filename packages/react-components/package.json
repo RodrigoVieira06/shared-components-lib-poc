@@ -17,6 +17,20 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/MainButton/index.js",
+      "require": "./dist/MainButton/index.js"
+    },
+    "./MainButton": {
+      "import": "./dist/MainButton/index.js",
+      "require": "./dist/MainButton/index.js"
+    },
+    "./MainInput": {
+      "import": "./dist/MainInput/index.js",
+      "require": "./dist/MainInput/index.js"
+    }
+  },
   "dependencies": {
     "antd": "^5.22.1"
   },
