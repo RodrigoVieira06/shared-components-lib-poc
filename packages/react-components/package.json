@@ -1,9 +1,12 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.2.2",
+  "version": "0.2.1",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -26,6 +29,9 @@
       "require": "./dist/MainInput/index.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "antd": "^5.22.1"
   },
@@ -35,7 +41,6 @@
     "react-dom": "^18.3.1",
     "rollup": "^4.27.3",
     "rollup-plugin-typescript2": "^0.36.0",
-    "terser": "^5.36.0",
     "tsup": "^8.3.5",
     "typescript": "^5.6.3"
   }
