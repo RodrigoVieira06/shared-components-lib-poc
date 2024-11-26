@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { default as MainButton } from './MainButton';
+import { MainButton } from './MainButton';
 import { PlusOutlined } from '@ant-design/icons';
 
 const meta: Meta<typeof MainButton> = {
@@ -12,24 +12,21 @@ const meta: Meta<typeof MainButton> = {
   argTypes: {
     children: {
       control: 'text',
-      description: 'Conteúdo exibido no botão.',
       defaultValue: 'Texto do botão',
     },
     iconPosition: {
       control: 'radio',
       options: ['start', 'end'],
-      description: 'Posição do ícone no botão.',
       defaultValue: 'start',
     },
     icon: {
       control: false,
-      description: 'Ícone exibido no botão.',
     },
     type: {
       control: 'select',
-      options: ["default", "primary", "dashed", "link", "text"],
-      defaultValue: 'primary'
-    }
+      options: ['default', 'primary', 'dashed', 'link', 'text'],
+      defaultValue: 'primary',
+    },
   },
 };
 
