@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+coverage/
+storybook/
+
+*.min.js
+*.log
+*lock.json

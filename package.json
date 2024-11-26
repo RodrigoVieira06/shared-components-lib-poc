@@ -6,9 +6,14 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "lerna run build && lerna version && lerna publish from-package",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "deploy": "npx lerna run build && npx lerna version && npx lerna publish from-package",
+    "storybook": "npx storybook dev -p 6006",
+    "build-storybook": "npx storybook build",
+    "style-dictionary": "npx style-dictionary build",
+    "prettier:write": "npx prettier . --write",
+    "prettier:check": "npx prettier . --check",
+    "lint": "npx eslint",
+    "lint:fix": "npx eslint --fix"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
@@ -24,7 +29,13 @@
     "@types/eslint": "^8.2.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
     "lerna": "^8.1.9",
+    "prettier": "3.3.3",
     "storybook": "^8.4.4",
     "style-dictionary": "^4.2.0"
   }
