@@ -6,7 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "deploy": "npx lerna run build && npx lerna version && npx lerna publish from-package",
+    "lerna:build": "npx lerna run build",
+    "lerna:version": "npx lerna version",
+    "lerna:publish": "npx lerna publish from-package",
+    "deploy": "yarn lerna:build && yarn lerna:version && yarn lerna:publish from-package",
     "storybook": "npx storybook dev -p 6006",
     "build-storybook": "npx storybook build",
     "style-dictionary": "npx style-dictionary build",
