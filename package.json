@@ -13,7 +13,8 @@
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
     "lint": "npx eslint",
-    "lint:fix": "npx eslint --fix"
+    "lint:fix": "npx eslint --fix",
+    "analyzecode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",

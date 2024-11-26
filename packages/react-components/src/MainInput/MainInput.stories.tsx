@@ -17,8 +17,8 @@ const meta: Meta<typeof MainInput> = {
     },
     type: {
       control: 'select',
-      options: ['text', 'number']
-    }
+      options: ['text', 'number'],
+    },
   },
 };
 
@@ -29,6 +29,6 @@ export const Playground: Story = {
   args: {
     placeholder: 'Digite um valor',
     size: 'small',
-    type: 'text'
+    type: 'text',
   },
 };
