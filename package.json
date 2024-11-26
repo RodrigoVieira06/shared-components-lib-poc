@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "lerna:build": "npx lerna run build",
-    "lerna:version": "npx lerna version minor",
+    "lerna:version": "npx lerna version patch",
     "lerna:publish": "npx lerna publish from-package",
     "deploy": "yarn lerna:build && yarn lerna:version && yarn lerna:publish",
     "storybook": "npx storybook dev -p 6006",
