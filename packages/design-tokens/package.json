@@ -1,0 +1,16 @@
+{
+  "name": "@testing-components/design-tokens",
+  "version": "0.0.0",
+  "description": "Styles of shared components POC",
+  "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npx style-dictionary build --config ./style-dictionary/config.json"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.2.0"
+  }
+}

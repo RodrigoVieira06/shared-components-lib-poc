@@ -5,3 +5,4 @@ lerna-debug.log
 dist/
 yarn.lock
 .npmrc
+*lock.json

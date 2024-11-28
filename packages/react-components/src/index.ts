@@ -1,3 +1,3 @@
-export * from './MainButton';
-export * from './MainInput';
-export * from './Footer';
+export * from './components/MainButton';
+export * from './components/MainInput';
+export * from './components/Footer';

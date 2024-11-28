@@ -16,7 +16,7 @@
     "deploy:major": "yarn lerna:build && yarn lerna:major && yarn lerna:publish",
     "storybook": "npx storybook dev -p 6006",
     "build-storybook": "npx storybook build",
-    "style-dictionary": "npx style-dictionary build",
+    "style-dictionary": "npx style-dictionary build --config ./style-dictionary/config.json",
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
     "lint": "npx eslint",
