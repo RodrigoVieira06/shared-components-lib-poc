@@ -13,6 +13,16 @@
         }
       ]
     },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [
+        {
+          "destination": "tokens.js",
+          "format": "javascript/es6"
+        }
+      ]
+    },
     "android": {
       "transformGroup": "android",
       "buildPath": "build/android/",

@@ -1,14 +1,14 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
-
 import { join, dirname } from 'path';
 
 /**
- * This function is used to resolve the absolute path of a package.
- * It is needed in projects that use Yarn PnP or are set up within a monorepo.
+ * Esta função resolve o caminho absoluto de um pacote.
+ * Necessária para monorepos ou Yarn PnP.
  */
 function getAbsolutePath(value: string): any {
   return dirname(require.resolve(join(value, 'package.json')));
 }
+
 const config: StorybookConfig = {
   stories: [
     '../packages/**/stories/*.stories.@(tsx|mdx)',
@@ -25,5 +25,31 @@ const config: StorybookConfig = {
     name: getAbsolutePath('@storybook/react-webpack5'),
     options: {},
   },
+  webpackFinal: async (config, { configType }) => {
+    // Adiciona suporte para SCSS
+    config.module?.rules?.push({
+      test: /\.scss$/,
+      use: [
+        'style-loader',  // Injeta estilos no DOM
+        'css-loader',    // Converte CSS em módulos JS
+        'sass-loader',   // Compila SCSS para CSS
+      ],
+    });
+
+    // Adiciona alias para resolver pacotes internos
+    config.resolve = {
+      ...config.resolve,
+      alias: {
+        ...config.resolve?.alias,
+        '@testing-components/design-tokens': join(
+          __dirname,
+          '../node_modules/@testing-components/design-tokens'
+        ),
+      },
+    };
+
+    return config;
+  },
 };
+
 export default config;
