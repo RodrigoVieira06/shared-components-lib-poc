@@ -1,4 +1,4 @@
-import * as tokens from '@testing-components/design-tokens/dist/js/index.mjs';
+import * as tokens from '@testing-components/design-tokens/dist/js/index';
 import { AliasToken } from 'antd/es/theme/internal';
 
 export interface DesignTokens extends Partial<AliasToken> {
