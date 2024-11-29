@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "build": "npm run clean && rollup -c"
   },
   "dependencies": {
-    "@testing-components/design-tokens": "^0.4.1",
+    "@testing-components/design-tokens": "^0.5.0",
     "antd": "^5.22.1"
   },
   "devDependencies": {
