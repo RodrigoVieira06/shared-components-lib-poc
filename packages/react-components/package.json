@@ -16,6 +16,7 @@
     "build": "npm run clean && rollup -c"
   },
   "dependencies": {
+    "@testing-components/design-tokens": "^0.4.1",
     "antd": "^5.22.1"
   },
   "devDependencies": {

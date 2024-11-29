@@ -26,17 +26,15 @@ const config: StorybookConfig = {
     options: {},
   },
   webpackFinal: async (config, { configType }) => {
-    // Adiciona suporte para SCSS
     config.module?.rules?.push({
       test: /\.scss$/,
       use: [
-        'style-loader',  // Injeta estilos no DOM
-        'css-loader',    // Converte CSS em módulos JS
-        'sass-loader',   // Compila SCSS para CSS
+        'style-loader',
+        'css-loader',
+        'sass-loader',
       ],
     });
 
-    // Adiciona alias para resolver pacotes internos
     config.resolve = {
       ...config.resolve,
       alias: {

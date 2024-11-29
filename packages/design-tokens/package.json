@@ -8,10 +8,11 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf build",
-    "build": "npm run clean && npx style-dictionary build --config ./style-dictionary/config.json"
+    "clean": "rm -rf dist",
+    "build": "npm run clean && npx style-dictionary build --config ./style-dictionary/config.json && tsup src/index.js"
   },
   "devDependencies": {
-    "style-dictionary": "^4.2.0"
+    "style-dictionary": "^4.2.0",
+    "tsup": "^8.3.5"
   }
 }
