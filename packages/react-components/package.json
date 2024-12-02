@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/react-components-poc",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "React shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
@@ -18,7 +18,7 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
-    "@testing-components/design-tokens": "^0.5.1",
+    "@testing-components/design-tokens": "^0.5.4",
     "antd": "^5.22.1"
   },
   "devDependencies": {
