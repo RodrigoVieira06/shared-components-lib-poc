@@ -1,4 +1,6 @@
 /src
 /node_modules
-/dist
 tsconfig.json
+jest.config.cjs
+rollup.config.js
+.babelrc
