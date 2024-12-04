@@ -28,11 +28,7 @@ const config: StorybookConfig = {
   webpackFinal: async (config, { configType }) => {
     config.module?.rules?.push({
       test: /\.scss$/,
-      use: [
-        'style-loader',
-        'css-loader',
-        'sass-loader',
-      ],
+      use: ['style-loader', 'css-loader', 'sass-loader'],
     });
 
     config.resolve = {
@@ -41,7 +37,7 @@ const config: StorybookConfig = {
         ...config.resolve?.alias,
         '@testing-components/design-tokens': join(
           __dirname,
-          '../node_modules/@testing-components/design-tokens'
+          '../node_modules/@testing-components/design-tokens',
         ),
       },
     };

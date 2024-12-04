@@ -18,9 +18,9 @@ describe('MainButton', () => {
   test('renders icon in the correct position (start)', () => {
     const icon = <PlusOutlined data-testid="icon" />;
     render(
-      <MainButton data-testid='button' icon={icon} iconPosition="start">
+      <MainButton data-testid="button" icon={icon} iconPosition="start">
         Acessar plataforma
-      </MainButton>
+      </MainButton>,
     );
 
     const button = screen.getByTestId('button');
@@ -32,9 +32,9 @@ describe('MainButton', () => {
   test('renders icon in the correct position (end)', () => {
     const icon = <PlusOutlined data-testid="icon" />;
     render(
-      <MainButton data-testid='button' icon={icon} iconPosition="end">
+      <MainButton data-testid="button" icon={icon} iconPosition="end">
         Acessar plataforma
-      </MainButton>
+      </MainButton>,
     );
 
     const button = screen.getByTestId('button');

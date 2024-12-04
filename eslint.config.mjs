@@ -10,7 +10,8 @@ export default [
       '*.min.js',
       'build/**',
       '.storybook/**',
-      'packages/**/dist/**'
+      'packages/**/dist/**',
+      'packages/**/coverage/**',
     ],
 
     files: ['**/*.{ts,tsx}'],

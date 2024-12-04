@@ -1,7 +1,6 @@
 import * as tokens from '@testing-components/design-tokens/dist/js/index';
-import { AliasToken } from 'antd/es/theme/internal';
 
-export interface DesignTokens extends Partial<AliasToken> {
+export interface IDesignTokens {
   ColorBasePrimary: string;
   ColorBaseSecondary: string;
   ColorText: string;
@@ -15,9 +14,9 @@ export interface DesignTokens extends Partial<AliasToken> {
   SpacingSmall: string;
   SpacingMedium: string;
   SpacingLarge: string;
-}
+};
 
-export const designTokens: DesignTokens = {
+export const designTokens: IDesignTokens = {
   ColorBasePrimary: tokens.ColorBasePrimary,
   ColorBaseSecondary: tokens.ColorBaseSecondary,
   ColorText: tokens.ColorText,

@@ -4,5 +4,5 @@ export default defineConfig({
   entry: ['src/index.js'],
   format: ['cjs'],
   dts: true,
-  outDir: 'dist/js'
+  outDir: 'dist/js',
 });

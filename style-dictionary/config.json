@@ -1,7 +1,5 @@
 {
-  "source": [
-    "./style-dictionary/tokens/**/*.json"
-  ],
+  "source": ["./style-dictionary/tokens/**/*.json"],
   "platforms": {
     "scss": {
       "transformGroup": "scss",

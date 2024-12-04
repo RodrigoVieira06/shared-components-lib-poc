@@ -1,7 +1,0 @@
-coverage/
-src/
-node_modules/
-tsconfig.json
-jest.config.cjs
-rollup.config.js
-.babelrc

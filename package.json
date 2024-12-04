@@ -6,14 +6,6 @@
     "packages/*"
   ],
   "scripts": {
-    "lerna:build": "npx lerna run build",
-    "lerna:patch": "npx lerna version patch",
-    "lerna:minor": "npx lerna version minor",
-    "lerna:major": "npx lerna version major",
-    "lerna:publish": "npx lerna publish from-package",
-    "deploy:patch": "yarn lerna:build && yarn lerna:patch -y && yarn lerna:publish -y",
-    "deploy:minor": "yarn lerna:build && yarn lerna:minor -y && yarn lerna:publish -y",
-    "deploy:major": "yarn lerna:build && yarn lerna:major -y && yarn lerna:publish -y",
     "storybook": "npx storybook dev -p 6006",
     "build-storybook": "npx storybook build",
     "style-dictionary": "npx style-dictionary build --config ./style-dictionary/config.json",
@@ -21,18 +13,26 @@
     "prettier:check": "npx prettier . --check",
     "lint": "npx eslint",
     "lint:fix": "npx eslint --fix",
-    "analyzecode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix"
+    "fixcode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix",
+    "lerna:build": "npx lerna run build",
+    "lerna:patch": "npx lerna version patch",
+    "lerna:minor": "npx lerna version minor",
+    "lerna:major": "npx lerna version major",
+    "lerna:publish": "npx lerna publish from-package",
+    "deploy:patch": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:patch -y && yarn lerna:publish -y",
+    "deploy:minor": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:minor -y && yarn lerna:publish -y",
+    "deploy:major": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:major -y && yarn lerna:publish -y"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
-    "@storybook/addon-essentials": "^8.4.4",
+    "@storybook/addon-essentials": "^8.4.6",
     "@storybook/addon-interactions": "^8.4.4",
     "@storybook/addon-mdx-gfm": "^8.4.4",
     "@storybook/addon-onboarding": "^8.4.4",
     "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
     "@storybook/blocks": "^8.4.4",
-    "@storybook/react": "^8.4.4",
-    "@storybook/react-webpack5": "^8.4.4",
+    "@storybook/react": "^8.4.6",
+    "@storybook/react-webpack5": "^8.4.6",
     "@storybook/test": "^8.4.4",
     "@types/eslint": "^8.2.1",
     "@types/react": "^18.3.12",
@@ -45,10 +45,14 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "lerna": "^8.1.9",
     "prettier": "3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "sass": "^1.81.0",
     "sass-loader": "^16.0.3",
     "storybook": "^8.4.4",
     "style-dictionary": "^4.2.0",
-    "style-loader": "^4.0.0"
+    "style-loader": "^4.0.0",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.0"
   }
 }
