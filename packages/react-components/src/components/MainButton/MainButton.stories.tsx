@@ -29,7 +29,7 @@ const meta: Meta<typeof MainButton> = {
     },
     token: {
       control: 'object',
-    }
+    },
   },
 };
 
@@ -46,6 +46,8 @@ export const Playground: Story = {
     block: false,
     icon: <PlusOutlined />,
     iconPosition: 'start',
-    // token: { colorPrimary: '' }
+    token: {
+      colorPrimary: 'ColorBasePrimary',
+    },
   },
 };

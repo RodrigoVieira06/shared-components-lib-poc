@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button, ButtonProps as AntButtonProps } from 'antd';
 import ThemeProvider from '../../tokens/ThemeProvider';
-import { CutstomTokenType } from '../../types/tokens';
+import { CustomTokenType } from '../../types/customTokenType';
 import { AliasToken } from 'antd/es/theme/internal';
+import { IDesignTokens } from '../../tokens/tokens';
 export interface ButtonProps extends AntButtonProps {
   iconPosition?: 'start' | 'end';
-  token?: Partial<CutstomTokenType<AliasToken>>;
+  token?: Partial<CustomTokenType<AliasToken, IDesignTokens>>;
 }
 
 export const MainButton: React.FC<ButtonProps> = ({
