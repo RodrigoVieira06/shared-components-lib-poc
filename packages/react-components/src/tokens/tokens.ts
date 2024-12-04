@@ -14,7 +14,7 @@ export interface IDesignTokens {
   SpacingSmall: string;
   SpacingMedium: string;
   SpacingLarge: string;
-};
+}
 
 export const designTokens: IDesignTokens = {
   ColorBasePrimary: tokens.ColorBasePrimary,
