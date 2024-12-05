@@ -19,7 +19,7 @@
     "lerna:minor": "npx lerna version minor",
     "lerna:major": "npx lerna version major",
     "lerna:publish": "npx lerna publish from-package",
-    "deploy:patch": "yarn fixcode && yarn lerna:build && yarn lerna:patch -y && yarn lerna:publish -y",
+    "deploy:patch": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:patch -y && yarn lerna:publish -y",
     "deploy:minor": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:minor -y && yarn lerna:publish -y",
     "deploy:major": "yarn fixcode && npx lerna run test && yarn lerna:build && yarn lerna:major -y && yarn lerna:publish -y"
   },
