@@ -12,6 +12,7 @@ export default [
       '.storybook/**',
       'packages/**/dist/**',
       'packages/**/coverage/**',
+      'packages/design-tokens/src/**',
     ],
 
     files: ['**/*.{ts,tsx}'],
