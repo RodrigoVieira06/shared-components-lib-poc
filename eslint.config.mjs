@@ -1,6 +1,6 @@
 import react from 'eslint-plugin-react';
 import ts from '@typescript-eslint/eslint-plugin';
-import tsParser from '@typescript-eslint/parser';
+import { default as tsParser } from '@typescript-eslint/parser';
 
 export default [
   {
@@ -14,7 +14,6 @@ export default [
       'packages/**/coverage/**',
       'packages/design-tokens/src/**',
     ],
-
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
