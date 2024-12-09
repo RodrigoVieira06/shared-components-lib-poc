@@ -17,7 +17,9 @@ const ThemeProvider: React.FC<ThemeProps> = ({ children, token }) => {
   );
 };
 
-const getCustomToken = (token?: Partial<CustomTokenType<AliasToken, IDesignTokens>>): Partial<AliasToken> => {
+const getCustomToken = (
+  token?: Partial<CustomTokenType<AliasToken, IDesignTokens>>,
+): Partial<AliasToken> => {
   const customToken: Partial<AliasToken> = {};
 
   if (token) {
