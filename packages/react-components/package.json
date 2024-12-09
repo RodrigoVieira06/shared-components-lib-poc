@@ -11,6 +11,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c",
