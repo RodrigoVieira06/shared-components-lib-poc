@@ -10,6 +10,14 @@ interface ThemeProps {
 }
 
 const ThemeProvider: React.FC<ThemeProps> = ({ children, token }) => {
+  const customToken: Partial<AliasToken> = getCustomToken(token);
+
+  return (
+    <ConfigProvider theme={{ token: customToken }}>{children}</ConfigProvider>
+  );
+};
+
+const getCustomToken = (token?: Partial<CustomTokenType<AliasToken, IDesignTokens>>): Partial<AliasToken> => {
   const customToken: Partial<AliasToken> = {};
 
   if (token) {
@@ -21,16 +29,16 @@ const ThemeProvider: React.FC<ThemeProps> = ({ children, token }) => {
       ) {
         const value = designTokens[designTokenKey as keyof IDesignTokens];
 
-        if (typeof value === 'string') {
-          customToken[key as keyof AliasToken] = value as never;
-        }
+        customToken[key as keyof Partial<AliasToken>] = value as never;
+      } else if (designTokenKey) {
+        const value = designTokenKey;
+
+        customToken[key as keyof Partial<AliasToken>] = value as never;
       }
     });
   }
 
-  return (
-    <ConfigProvider theme={{ token: customToken }}>{children}</ConfigProvider>
-  );
+  return customToken;
 };
 
 export default ThemeProvider;

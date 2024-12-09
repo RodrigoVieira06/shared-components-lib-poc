@@ -46,8 +46,5 @@ export const Playground: Story = {
     block: false,
     icon: <PlusOutlined />,
     iconPosition: 'start',
-    token: {
-      colorPrimary: 'ColorBasePrimary',
-    },
-  },
+  }
 };
