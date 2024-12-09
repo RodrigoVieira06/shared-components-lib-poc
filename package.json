@@ -11,7 +11,7 @@
     "style-dictionary": "npx style-dictionary build --config ./style-dictionary/config.json",
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
-    "lint": "npx eslint",
+    "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix",
     "fixcode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix",
     "lerna:build": "npx lerna run build",

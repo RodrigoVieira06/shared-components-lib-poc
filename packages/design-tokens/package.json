@@ -8,11 +8,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.com/"
   },
-  "files": [
-    "dist",
-    "README.md",
-    "package.json"
-  ],
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && npx style-dictionary build --config ./style-dictionary/config.json && tsup src/index.js"

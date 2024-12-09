@@ -12,12 +12,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.com/"
   },
-  "files": [
-    "node_modules",
-    "dist",
-    "README.md",
-    "package.json"
-  ],
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && rollup -c",
