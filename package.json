@@ -19,9 +19,10 @@
     "lerna:minor": "npx lerna version minor",
     "lerna:major": "npx lerna version major",
     "lerna:publish": "npx lerna publish from-package",
-    "deploy:patch": "yarn lerna:build && yarn fixcode && npx lerna run test && yarn lerna:patch -y && yarn lerna:publish -y",
-    "deploy:minor": "yarn lerna:build && yarn fixcode && npx lerna run test && yarn lerna:minor -y && yarn lerna:publish -y",
-    "deploy:major": "yarn lerna:build && yarn fixcode && npx lerna run test && yarn lerna:major -y && yarn lerna:publish -y"
+    "test": "npx lerna run test",
+    "deploy:patch": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:patch -y && yarn lerna:publish -y",
+    "deploy:minor": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:minor -y && yarn lerna:publish -y",
+    "deploy:major": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:major -y && yarn lerna:publish -y"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
