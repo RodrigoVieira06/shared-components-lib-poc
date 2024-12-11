@@ -16,8 +16,8 @@
     "fixcode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix",
     "test": "npx lerna run test",
     "lerna:build": "npx lerna run build",
-    "lerna:patch": "npx lerna version patch",
-    "lerna:publish": "npx lerna publish from-package",
+    "lerna:patch": "npx lerna version patch -y",
+    "lerna:publish": "npx lerna publish from-package -y",
     "lerna:deploy": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:patch -y && yarn lerna:publish -y"
   },
   "devDependencies": {
