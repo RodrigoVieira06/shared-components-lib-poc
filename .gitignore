@@ -3,4 +3,4 @@ build/
 lerna-debug.log
 *storybook.log
 dist/
-.npmrc
+.env

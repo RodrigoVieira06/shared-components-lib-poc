@@ -14,15 +14,11 @@
     "lint": "npx eslint .",
     "lint:fix": "npx eslint --fix",
     "fixcode": "yarn prettier:write && yarn prettier:check && yarn lint && yarn lint:fix",
+    "test": "npx lerna run test",
     "lerna:build": "npx lerna run build",
     "lerna:patch": "npx lerna version patch",
-    "lerna:minor": "npx lerna version minor",
-    "lerna:major": "npx lerna version major",
     "lerna:publish": "npx lerna publish from-package",
-    "test": "npx lerna run test",
-    "deploy:patch": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:patch -y && yarn lerna:publish -y",
-    "deploy:minor": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:minor -y && yarn lerna:publish -y",
-    "deploy:major": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:major -y && yarn lerna:publish -y"
+    "lerna:deploy": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:patch -y && yarn lerna:publish -y"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.2",
@@ -41,6 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
     "css-loader": "^7.1.2",
+    "dotenv": "^16.4.7",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
