@@ -70,9 +70,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Building dist packages
-        run: yarn lerna:build
-
       - name: Updating packages version
         run: yarn lerna:patch
 
