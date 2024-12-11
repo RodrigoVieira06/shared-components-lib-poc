@@ -22,8 +22,8 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Enable Corepack (Yarn 2+)
-        run: corepack enable
+      - name: Use project-specific Yarn version
+        run: yarn --version
 
       - name: Install dependencies
         run: yarn install
@@ -45,8 +45,8 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Enable Corepack (Yarn 2+)
-        run: corepack enable
+      - name: Use project-specific Yarn version
+        run: yarn --version
 
       - name: Install dependencies
         run: yarn install
@@ -70,8 +70,8 @@ jobs:
         with:
           node-version: 20.x
 
-      - name: Enable Corepack (Yarn 2+)
-        run: corepack enable
+      - name: Use project-specific Yarn version
+        run: yarn --version
 
       - name: Authenticate to NPM
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
