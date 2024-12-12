@@ -17,7 +17,7 @@
     "test": "npx lerna run test",
     "lerna:build": "npx lerna run build",
     "lerna:patch": "npx lerna version patch -y",
-    "lerna:publish": "npx lerna publish from-package -y",
+    "lerna:publish": "npx lerna publish from-package --no-git-reset -y",
     "lerna:deploy": "yarn lerna:build && yarn fixcode && yarn test && yarn lerna:patch -y && yarn lerna:publish -y"
   },
   "devDependencies": {
