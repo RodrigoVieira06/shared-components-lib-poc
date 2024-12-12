@@ -42,9 +42,6 @@ jobs:
           node-version: 20.x
           cache: 'yarn'
 
-      - name: Install dependencies
-        run: yarn install
-
       - name: Building dist packages
         run: yarn lerna:build
 
@@ -67,8 +64,10 @@ jobs:
       - name: Authenticate to NPM
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Configure Git identity
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
 
       - name: Updating packages version
         run: yarn lerna:patch
