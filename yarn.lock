@@ -3999,7 +3999,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-components/design-tokens@npm:^0.5.12, @testing-components/design-tokens@workspace:packages/design-tokens":
+"@testing-components/design-tokens@npm:^0.5.13, @testing-components/design-tokens@workspace:packages/design-tokens":
   version: 0.0.0-use.local
   resolution: "@testing-components/design-tokens@workspace:packages/design-tokens"
   dependencies:
@@ -4018,7 +4018,7 @@ __metadata:
     "@babel/preset-typescript": "npm:^7.26.0"
     "@rollup/plugin-node-resolve": "npm:^15.3.0"
     "@rollup/plugin-typescript": "npm:^12.1.1"
-    "@testing-components/design-tokens": "npm:^0.5.12"
+    "@testing-components/design-tokens": "npm:^0.5.13"
     "@testing-library/dom": "npm:^10.4.0"
     "@testing-library/jest-dom": "npm:^6.6.3"
     "@testing-library/react": "npm:^16.0.1"

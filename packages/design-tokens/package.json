@@ -1,6 +1,6 @@
 {
   "name": "@testing-components/design-tokens",
-  "version": "0.5.12",
+  "version": "0.5.13",
   "description": "Styles of shared components POC",
   "author": "RodrigoVieira <rodrigo.vieira@levva.io>",
   "license": "ISC",
