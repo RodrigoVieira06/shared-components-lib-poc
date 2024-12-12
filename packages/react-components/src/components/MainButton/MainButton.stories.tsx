@@ -27,9 +27,9 @@ const meta: Meta<typeof MainButton> = {
       options: ['default', 'primary', 'dashed', 'link', 'text'],
       defaultValue: 'primary',
     },
-    token: {
-      control: 'object',
-    },
+    // token: {
+    //   control: 'object',
+    // },
   },
 };
 
