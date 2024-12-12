@@ -2,7 +2,7 @@
   "packages": ["packages/*"],
   "npmClient": "yarn",
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.5.13",
+  "version": "0.5.14",
   "command": {
     "run": {
       "npmClientArgs": ["--no-package-lock"]
